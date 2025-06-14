@@ -32,9 +32,9 @@ body{
 	background-color: #f3ecd8;
 	position:         absolute;
 	width:            500px;
-	height:           200px;
+	height:           fit-content;
 	text-align:       center;
-	padding:          10px;
+	padding:          0px 0px 30px 0px;
 	border-radius:    0px 0px 20px 20px;
 	left:             50%;
 	transform:        translate(-50%, 0%);
@@ -80,7 +80,7 @@ p{
 }
 
 .page-video{
-	width:   800px;
+	width: 850px;
 }
 
 #demo-link-container{
@@ -90,6 +90,20 @@ p{
 .demo-link{
 	width:         400px;
 	border-radius: 30px;
+}
+
+.social-media-icon{
+	width: 130px;
+	margin: 0px 20px;
+}
+
+.social-media-icon-small{
+	width: 60px;
+	margin: 0px 10px;
+}
+
+.demo-exists{
+	display: none;
 }
 
 #page{
@@ -103,6 +117,27 @@ p{
 	padding:          40px;
 }
 
+.team-member-container{
+	display: inline-block;
+	margin: 20px;
+}
+
+.team-member-image{
+	width: 200px;
+	border-radius: 100%;
+}
+
+.team-member-container > p{
+	font-size: 30px;
+}
+
+footer{
+}
+
+footer > p{
+	font-size: 25px;
+}
+
 @media only screen and (orientation: portrait){
 
 	#header{
@@ -111,7 +146,7 @@ p{
 		transform:     translate(0%, 0%);
 		width:         100%;
 		border-radius: 0px;
-		padding:       0px;
+		padding:       0px 0px 25px 0px;
 	}
 
 	#page{
@@ -120,7 +155,7 @@ p{
 		transform:     translate(-0%, 0%);
 		width:         100%;
 		border-radius: 0px;
-		padding:       0px;
+		padding:       40px 0px;
 	}
 
 	.background{
@@ -139,6 +174,11 @@ p{
 		width: 80%;
 	}
 
+	.social-media-icon{
+		width:  15%;
+		margin: 4%;
+	}
+
 }
 
 	</style>
@@ -147,7 +187,12 @@ p{
 
 		<div id="header">
 			<a href="#page"><h1>Picto</h1></a>
-			<a href="#demo-header"><h2>Play Demo!</h2></a>
+			<a href="#demo-header"><h2 class="demo-exists">Play Demo!</h2></a>
+
+			<a href="https://discord.gg/dM7ZwS6z">                  <img class="social-media-icon-small" src="assets/discord_icon.png"></a>
+			<a href="https://x.com/GustavAlmstrom">                 <img class="social-media-icon-small" src="assets/twitter_icon.png"></a>
+			<a href="https://www.tiktok.com/@gustav_almstrom_games"><img class="social-media-icon-small" src="assets/tiktok_icon.png"></a>
+			<a href="https://www.instagram.com/picto_camera_game">  <img class="social-media-icon-small" src="assets/instagram_icon.png"></a>
 		</div>
 
 		<video class="background" autoplay muted loop>
@@ -163,19 +208,110 @@ p{
 				<br>
 
 				<video class="page-video" autoplay muted loop>
-				  <source src="videos/color.mp4" type="video/mp4">
+				  <source src="videos/color-cropped.mp4" type="video/mp4">
 				</video>
 
-				<h1 id="demo-header">Play the demo!</h1>
 				<br>
+				<br>
+				<br>
+
+				<div class="demo-exists">
+
+				<h1 id="demo-header">Play the demo!</h1>
+
+				<p>Use your camera to overcome lot's of creative challenges. The demo is free and runs on any regular smartphone.</p>
+				<br>
+
 				<br>
 				<div id="demo-link-container">
 					<img class="demo-link" src="assets/android_open_testing.png">
 					<img class="demo-link" src="assets/testflight.png">
 				</div>
 
+				<br>
+				<br>
+				<br>
+
+				<h1>More Mechanics</h1>
+
+				<p>In addition to jumping around in the real world, Picto will have many more unique mechanics for you to discover.</p>
+				<br>
+
+				<video class="page-video" autoplay muted loop>
+					<source src="videos/water-live-2-cut-cropped.mp4" type="video/mp4">
+				</video>
+
+				<video class="page-video" autoplay muted loop>
+				  <source src="videos/enemy-live-cut-cropped.mp4" type="video/mp4">
+				</video>
+
+				<br>
+				<br>
+
+				</div>
+
+				<h1>Follow the Development</h1>
+
+				<br>
+				<p>The game is currently under active development. Lot's of art is being produced, and all of the different mechanics are getting polished. Follow us to get the latest news!</p>
+				<br>
+
+				<a href="https://discord.gg/dM7ZwS6z">                  <img class="social-media-icon" src="assets/discord_icon.png"></a>
+				<a href="https://x.com/GustavAlmstrom">                 <img class="social-media-icon" src="assets/twitter_icon.png"></a>
+				<a href="https://www.tiktok.com/@gustav_almstrom_games"><img class="social-media-icon" src="assets/tiktok_icon.png"></a>
+				<a href="https://www.instagram.com/picto_camera_game">  <img class="social-media-icon" src="assets/instagram_icon.png"></a>
+
+				<br>
+				<br>
+				<br>
+
+				<video class="page-video" autoplay muted loop>
+				  <source src="videos/overworld-cut-cropped.mp4" type="video/mp4">
+				</video>
+
+				<br>
+				<br>
+
+				<video class="page-video" autoplay muted loop>
+					<source src="videos/water-live-2-cut-cropped.mp4" type="video/mp4">
+				</video>
+
+				<br>
+				<br>
+				<br>
+
+				<h1>The Team</h1>
+
+				<br>
+
+				<div class="team-member-container">
+					<img class="team-member-image" src="assets/gustav_person.png">
+					<p><b>Gustav Almström</b></p>
+					<p>Programming</p>
+				</div>
+				<div class="team-member-container">
+					<img class="team-member-image" src="assets/olof_person.png">
+					<p><b>Olof Nilsson</b></p>
+					<p>Art</p>
+				</div>
+				<div class="team-member-container">
+					<img class="team-member-image" src="assets/dennis_person.png">
+					<p><b>Dennis Qvarfordt</b></p>
+					<p>Music/Sound</p>
+				</div>
+
+				<br>
+				<br>
+				<br>
+
+				<footer>
+					<p>© Copyright 2025 Gustav Almström</p>
+				</footer>
+
 			</div>
+
 			<img class="background-image" src="assets/background_top.png">
+
 		</div>
 
 	</body>
