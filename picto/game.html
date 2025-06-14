@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
 		<meta charset="utf-8">
 
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 
 	</head>
 
 	<style>
 
-html { scroll-behavior: smooth; }
+html {
+	scroll-behavior: smooth;
+}
 
 *{
 	margin:          0px 0px;
@@ -20,7 +25,7 @@ html { scroll-behavior: smooth; }
 }
 
 body{
-	background-color: #16435b;
+	background: black;
 }
 
 #header{
@@ -29,7 +34,7 @@ body{
 	width:            500px;
 	height:           200px;
 	text-align:       center;
-	padding:          10pt;
+	padding:          10px;
 	border-radius:    0px 0px 20px 20px;
 	left:             50%;
 	transform:        translate(-50%, 0%);
@@ -57,23 +62,79 @@ h2:hover{
 	color:            #6b6458;
 }
 
+p{
+	margin:      10px;
+	font-size:   35px;
+	font-family: "Alice", serif;
+}
+
 .background{
-	width: 100%;
+	width:   100%;
+	display: block;
 }
 
 .background-image{
 	width:           100%;
 	image-rendering: pixelated;
+	display:         block;
+}
+
+.page-video{
+	width:   800px;
+}
+
+#demo-link-container{
+	display: inline-block;
+}
+
+.demo-link{
+	width:         400px;
+	border-radius: 30px;
 }
 
 #page{
 	background-color: #f3ecd8;
 	width:            1000px;
-	height:           100%;
+	height:           fill;
 	position:         absolute;
 	left:             50%;
 	transform:        translate(-50%, 0%);
 	text-align:       center;
+	padding:          40px;
+}
+
+@media only screen and (orientation: portrait){
+
+	#header{
+		width:   fit-content;
+		height:  fit-content;
+	}
+
+	#page{
+		position:      relative;
+		left:          0%;
+		transform:     translate(-0%, 0%);
+		width:         100%;
+		border-radius: 0px;
+		padding:       0px;
+	}
+
+	.background{
+		width: 100%;
+	}
+
+	.background-image{
+		display: none;
+	}
+
+	.page-video{
+		width: 100%;
+	}
+
+	.demo-link{
+		width: 80%;
+	}
+
 }
 
 	</style>
@@ -82,7 +143,7 @@ h2:hover{
 
 		<div id="header">
 			<a href="#page"><h1>Picto</h1></a>
-			<a href="#page"><h2>Play Demo!</h2></a>
+			<a href="#demo-header"><h2>Play Demo!</h2></a>
 		</div>
 
 		<video class="background" autoplay muted loop>
@@ -91,7 +152,24 @@ h2:hover{
 
 		<div>
 			<div id="page">
-				<h1>A Camera Based Platformer</h1>
+				<h1>Escape a virtual world</h1>
+
+				<br>
+				<p>Tim is trapped inside a video game, but one night he starts having dreams about a universe outside of his own.</p>
+				<br>
+
+				<video class="page-video" autoplay muted loop>
+				  <source src="videos/color.mp4" type="video/mp4">
+				</video>
+
+				<h1 id="demo-header">Play the demo!</h1>
+				<br>
+				<br>
+				<div id="demo-link-container">
+					<img class="demo-link" src="assets/android_open_testing.png">
+					<img class="demo-link" src="assets/testflight.png">
+				</div>
+
 			</div>
 			<img class="background-image" src="assets/background_top.png">
 		</div>
