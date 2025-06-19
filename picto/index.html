@@ -16,6 +16,7 @@
 
 html {
 	scroll-behavior: smooth;
+	font-size: 1px;
 }
 
 *{
@@ -26,6 +27,10 @@ html {
 
 body{
 	background: black;
+}
+
+.space{
+	height: 10px;
 }
 
 #header{
@@ -41,13 +46,13 @@ body{
 }
 
 h1{
-	font-size:   80px;
+	font-size:   80rem;
 	font-family: "Alice", serif;
 	color:       black;
 }
 
 h2{
-	font-size:        50px;
+	font-size:        50rem;
 	font-family:      "Alice", serif;
 //	background-color: #d7a487;
 	background-color: #ebb989;
@@ -63,8 +68,8 @@ h2:hover{
 }
 
 p{
-	margin:      10px;
-	font-size:   35px;
+	margin:      10rem;
+	font-size:   35rem;
 	font-family: "Alice", serif;
 	color:       black;
 }
@@ -94,12 +99,12 @@ p{
 }
 
 .social-media-icon{
-	width: 100px;
+	width: 100rem;
 	margin: 0px 20px;
 }
 
 .social-media-icon-small{
-	width: 60px;
+	width: 60rem;
 	margin: 0px 10px;
 }
 
@@ -129,17 +134,21 @@ p{
 }
 
 .team-member-container > p{
-	font-size: 30px;
+	font-size: 30rem;
 }
 
 footer{
 }
 
 footer > p{
-	font-size: 25px;
+	font-size: 25rem;
 }
 
 @media only screen and (orientation: portrait){
+
+	html{
+		font-size: 0.6px;
+	}
 
 	#header{
 		position:      relative;
@@ -199,39 +208,42 @@ footer > p{
 			<div id="page">
 				<h1>Escape a virtual world</h1>
 
-				<br>
+				<div class="space"></div>
+
 				<p>Tim is trapped inside a video game, but one night he starts having dreams about a universe outside of his own.</p>
-				<br>
+
+				<div class="space"></div>
+				<div class="space"></div>
 
 				<video class="page-video" autoplay muted loop>
 				  <source src="videos/color-cropped.mp4" type="video/mp4">
 				</video>
 
-				<br>
-				<br>
-				<br>
+				<div class="space"></div>
+				<div class="space"></div>
+				<div class="space"></div>
 
 				<div class="demo-exists">
 
 				<h1 id="demo-header">Play the demo!</h1>
 
 				<p>Use your camera to overcome lot's of creative challenges. The demo is free and runs on any regular smartphone.</p>
-				<br>
+				<div class="space"></div>
 
-				<br>
+				<div class="space"></div>
 				<div id="demo-link-container">
 					<img class="demo-link" src="assets/android_open_testing.png">
 					<img class="demo-link" src="assets/testflight.png">
 				</div>
 
-				<br>
-				<br>
-				<br>
+				<div class="space"></div>
+				<div class="space"></div>
+				<div class="space"></div>
 
 				<h1>More Mechanics</h1>
 
 				<p>In addition to jumping around in the real world, Picto will have many more unique mechanics for you to discover.</p>
-				<br>
+				<div class="space"></div>
 
 				<video class="page-video" autoplay muted loop>
 					<source src="videos/water-live-2-cut-cropped.mp4" type="video/mp4">
@@ -241,44 +253,44 @@ footer > p{
 				  <source src="videos/enemy-live-cut-cropped.mp4" type="video/mp4">
 				</video>
 
-				<br>
-				<br>
+				<div class="space"></div>
+				<div class="space"></div>
 
 				</div>
 
 				<h1>Follow the Development</h1>
 
-				<br>
+				<div class="space"></div>
 				<p>The game is currently under active development. Lot's of art is being produced, and all of the different mechanics are getting polished. Follow us to get the latest news!</p>
-				<br>
+				<div class="space"></div>
 
 				<a target="_blank" href="https://discord.gg/dM7ZwS6z">                        <img class="social-media-icon" src="assets/discord_icon.png"></a>
 				<a target="_blank" href="https://bsky.app/profile/gustavalmstrom.bsky.social"><img class="social-media-icon" src="assets/blue_sky_icon.png"></a>
 				<a target="_blank" href="https://www.tiktok.com/@gustav_almstrom_games">      <img class="social-media-icon" src="assets/tiktok_icon.png"></a>
 				<a target="_blank" href="https://www.instagram.com/picto_camera_game">        <img class="social-media-icon" src="assets/instagram_icon.png"></a>
 
-				<br>
-				<br>
-				<br>
+				<div class="space"></div>
+				<div class="space"></div>
+				<div class="space"></div>
 
 				<video class="page-video" autoplay muted loop>
 				  <source src="videos/overworld-cut-cropped.mp4" type="video/mp4">
 				</video>
 
-				<br>
-				<br>
+				<div class="space"></div>
+				<div class="space"></div>
 
 				<video class="page-video" autoplay muted loop>
 					<source src="videos/water-live-2-cut-cropped.mp4" type="video/mp4">
 				</video>
 
-				<br>
-				<br>
-				<br>
+				<div class="space"></div>
+				<div class="space"></div>
+				<div class="space"></div>
 
 				<h1>The Team</h1>
 
-				<br>
+				<div class="space"></div>
 
 				<div class="team-member-container">
 					<a target="_blank" href="http://gustavalmstrom.com"><img class="team-member-image" src="assets/gustav_person.png"></a>
@@ -296,9 +308,9 @@ footer > p{
 					<p>Music/Sound</p>
 				</div>
 
-				<br>
-				<br>
-				<br>
+				<div class="space"></div>
+				<div class="space"></div>
+				<div class="space"></div>
 
 				<footer>
 					<p>© Copyright 2025 Gustav Almström</p>
