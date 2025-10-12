@@ -37,6 +37,15 @@ h2{
 	margin:    20px 0px;
 }
 
+h3{
+	font-size: 40px;
+	width:     fit-content;
+}
+
+h3:hover{
+	opacity: 0.5;
+}
+
 p{
 	font-size:  25px;
 	text-align: left;
@@ -49,6 +58,15 @@ img{
 
 .screenshot{
 	width: 50%;
+}
+
+.social-media-icon{
+	width: 90px;
+	margin: 0px 20px;
+}
+
+.social-media-icon:hover{
+	opacity: 0.5;
 }
 
 #navigation{
@@ -72,12 +90,32 @@ img{
 	width: 900px;
 }
 
+.page-video-portrait{
+	width: 500px;
+}
+
+.team-member-container{
+	display: inline-block;
+	margin: 20px;
+}
+
+.team-member-image{
+	width: 200px;
+	border-radius: 100%;
+}
+
+.team-member-container > p{
+	text-align: center;
+	font-size:  30px;
+	width:      250px;
+}
+
 	</style>
 	<body>
 		<div id="navigation">
 			<a href="#about-header"><h2 class="navigation-item">About    </h2></a>
-			<a href="#gifs-header"> <h2 class="navigation-item"> GIFs    </h2></a>
-			<a href="#team-header"> <h2 class="navigation-item"> The Team</h2></a>
+			<a href="#gifs-header"> <h2 class="navigation-item">Videos    </h2></a>
+			<a href="#team-header"> <h2 class="navigation-item">The Team</h2></a>
 			<a href="#links-header"><h2 class="navigation-item">Links    </h2></a>
 		</div>
 
@@ -93,36 +131,157 @@ img{
 
 		<p>Tim is trapped inside a video game, but one night he starts having dreams about a universe outside of his own.</p>
 
-		<h2>Innovative Gameplay and Story</h2>
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
 
-		<p>Talk about the game design.</p>
+		<p>Looking down on the sunset, he ponders if anything more beautiful could ever exist. Could there be a moon out there shining brighter than the one he sees every night?</p>
 
-		<h2>Main Developer Dropped Out of College</h2>
+		<p></p>
 
-		<p>Picto started as a hobby project by me (Gustav Almström), while I was studying at Lund University. I had previously released 3 games on Steam, but none of them had too much financial success. However, when I first implemented the system that let a platforming character jump around inside my phone's camera, I realised that I had found something which really had a lot of potential.</p>
+		<h2>Fresh and Innovative Gameplay</h2>
 
-		<br>
+		<p>Picto is a game about interacting with the real world. The game will ask you questions, in the form of levels, and it's up to you to find the answer somewhere in your surroundings.</p>
 
-		<p>All of my previous projects have been completed with a zero dollar budget, but for this game I decided that I wanted to do it more professionally. I hired the incredibly taltented Comic artist Olof Nilsson, who I found on a Discord server, to draw some art for a demo of the game. I then hand wrote over 200 emails to different video game publishers, all of which turned down the project. This happened in October of 2024, which has been said to be one of the toughest years in the game industry.</p>
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
 
+		<p>How will you get over that gap? How will you make it past that guard dog? How will you escape through that solid wall? You are allowed to use your full creativity, to find an answer somewhere in the infinite sandbox of life.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>The game aims to explore the full consequence of mixing reality with a video game, and does not shy away from all of the amazing things that can happen, but rather embraces them. You can walk around on your shadow or your reflection in the mirror. You can create the solution to a level with objects in your room, find it out in nature, draw it with pen and paper or on a computer screen.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>The best way to get a feel for the game is of course to try the <a target="_" href="https://picto-game.com">Demo</a>.<p>
 
 		<h2>Custom Made Game Engine</h2>
 
-		<p>The game's tech is written from scratch in C++</p>
-
-		<h2>Things coming up!</h2>
-
-		<p>The team is planning on running a kickstarter to fund the game, <a href="https://www.kickstarter.com/projects/picto-game/a-camera-game-picto">link</a>.</p>
+		<p>The game's engine is written from scratch in C++ and uses a new mixed reality technique not seen in any previous game. The idea behind the tech is to create as much interesting gameplay as possible, rather than making the most immersive AR experience, which might be what gives it the edge over traditional AR games.</p>
 
 		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
 
-		<p>There will be testing for the game's demo around August, you can join the game's <a href="https://discord.gg/kZ2XBg7QAQ">Discord</a> if you're interested!</p>
+		<p>A hot topic of discussion for indie developers is whether you should use a pre-built game engine, like Unity or Unreal, or make your own. I stand pretty firmly on the side that using a pre-built engine limits your imagination somewhat. You will be thinking about what you can do with rigidbodies, character controllers, scripts, effects and so on, instead of just thinking about pure code and all of the things that a computer actually is capable of doing.</p>
 
-		<h1 id="gifs-header">More GIFs</h1>
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>Picto is an example of a game which I think would be harder to make in a pre-built engine, especially if you want to make it run well, since the consists of a combination of a bunch of different custom-made systems that don't already exist in engines.</p>
+
+		<h2>Kickstarer in November!</h2>
+
+		<p>We're planning on running a kickstarter to be able to complete the game, <a target="_" href="https://kickstarter.picto-game.com">kickstarter.picto-game.com</a>, and we're going to launch it some time in November!</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>We have lot's more stuff planned for the full game than what is shown in the demo. Lot's of new mechanics (such as the water simulation in the video below), new areas, and many new levels, but also a level editor!</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>The editor is of course going to let you design your own levels like the ones in the game, and share them with anyone, but we also have plans for a new kind of level. The new level type will have you place out Tim, stars, enemies, and then record a video. The player of the level will then get to play the video your recorded, and try to collect the star. This will basically turn Picto into a real life game engine, which lets you design levels on pen and paper, record them, and send them to your friends or anyone who would like to play!</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>The Picto editor will basically be a real life version of Super Mario Maker.</p>
+
+		<h1 id="gifs-header">Videos</h1>
+
+		<div>
+		<video class="page-video" controls>
+		  <source src="videos/splish_splash.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div>
+		<video class="page-video" controls>
+		  <source src="videos/color-cropped.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div>
+		<video class="page-video-portrait" controls>
+		  <source src="videos/pushing_tim.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div>
+		<video class="page-video" controls>
+		  <source src="videos/overworld-cut-cropped.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div>
+		<video class="page-video" controls>
+		  <source src="videos/office_cropped.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div>
+		<video class="page-video" controls>
+		  <source src="videos/mixed_reality.mp4" type="video/mp4">
+		</video>
+		</div>
 
 		<h1 id="team-header">The Team</h1>
 
+		<div class="team-member-container">
+			<a target="_blank" href="http://gustavalmstrom.com"><img class="team-member-image" src="assets/gustav_person.png"></a>
+			<p><b>Gustav Almström</b></p>
+			<p>Programming</p>
+		</div>
+		<div class="team-member-container">
+			<a target="_blank" href="https://olofhjalmar.webflow.io/"><img class="team-member-image" src="assets/olof_person.png"></a>
+			<p><b>Olof Nilsson</b></p>
+			<p>Art</p>
+		</div>
+		<div class="team-member-container">
+			<a target="_blank" href="https://se.linkedin.com/in/dennis-qvarfordt-hammarlind-b3a39a1b6"><img class="team-member-image" src="assets/dennis_person.png"></a>
+			<p><b>Dennis Qvarfordt</b></p>
+			<p>Music/Sound</p>
+		</div>
+
 		<h1 id="links-header">Links</h1>
+
+		<a target="_" href="https://picto-game.com"><h3>Demo</h3></a>
+
+		<div class="space"></div>
+
+		<a href="mailto:gustav.almstrom.games@gmail.com"><h3>Mail</h3></a>
+
+		<div class="space"></div>
+
+		<a target="_blank" href="https://discord.picto-game.com"><h3>Discord</h3></a>
+
+		<div class="space"></div>
+
+		<a target="_blank" href="https://x.com/GustavAlmstrom"><h3>Twitter</h3></a>
+
+		<div class="space"></div>
+
+		<a target="_blank" href="https://www.instagram.com/picto_camera_game"><h3>Instagram</h3></a>
+
+		<div class="space"></div>
+
+		<a target="_blank" href="https://www.tiktok.com/@gustav_almstrom_games"><h3>Tik Tok</h3></a>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
 
 	</body>
 </html>
