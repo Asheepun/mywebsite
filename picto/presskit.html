@@ -28,8 +28,10 @@ body{
 }
 
 h1{
-	font-size: 60px;
-	margin:    20px 0px;
+	font-size:       60px;
+	margin:          20px 0px;
+	color:           black;
+	text-decoration: none;
 }
 
 h2{
@@ -56,6 +58,10 @@ img{
 	width: 44%;
 }
 
+.caption{
+	text-align: center;
+}
+
 .screenshot{
 	width: 50%;
 }
@@ -66,6 +72,10 @@ img{
 }
 
 .social-media-icon:hover{
+	opacity: 0.5;
+}
+
+a:hover{
 	opacity: 0.5;
 }
 
@@ -112,18 +122,9 @@ img{
 
 	</style>
 	<body>
-		<div id="navigation">
-			<a href="#about-header"><h2 class="navigation-item">About    </h2></a>
-			<a href="#gifs-header"> <h2 class="navigation-item">Videos    </h2></a>
-			<a href="#team-header"> <h2 class="navigation-item">The Team</h2></a>
-			<a href="#links-header"><h2 class="navigation-item">Links    </h2></a>
-		</div>
-
-		<div class="space"></div>
-
 		<h1 id="about-header">Picto - A Camera Game</h1>
 
-		<video class="page-video" autoplay muted loop>
+		<video class="page-video" autoplay muted loop controls>
 		  <source src="videos/mixed_reality.mp4" type="video/mp4">
 		</video>
 
@@ -137,11 +138,42 @@ img{
 
 		<p>Looking down on the sunset, he ponders if anything more beautiful could ever exist. Could there be a moon out there shining brighter than the one he sees every night?</p>
 
-		<p></p>
+		<h2>What people are saying</h2>
+
+		<p class="caption"><i>´´Innovative, game-changing and disruptive``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://www.pocketgamer.com/picto/coming-soon/">Pocket Gamer</a></p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><i>´´MAN I LOVE THIS, it's so cute and the idea is just brilliant!``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://www.tiktok.com/@gustav_almstrom_games/video/7519805623542861078">Tik Tok</a> (3 million views)</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><i>´´Finally! A UNIQUE and innovative game!``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://www.reddit.com/r/IndieDev/comments/1nk3r19/a_camera_game_looking_for_playtesters_d/">Reddit</a> (1.1 million views)</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><i>´´Fantastic``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://80.lv/articles/this-mixed-reality-game-with-tiny-character-in-sketch-world-now-has-demo">80 Level</a></p>
+
+		<div class="space"></div>
+
 
 		<h2>Fresh and Innovative Gameplay</h2>
 
-		<p>Picto is a game about interacting with the real world. The game will ask you questions, in the form of levels, and it's up to you to find the answer somewhere in your surroundings.</p>
+		<p>Picto is a game about using your phone's camera to interact with the real world. The game will ask you questions, in the form of levels, and it's up to you to find the answer somewhere in your surroundings.</p>
 
 		<div class="space"></div>
 		<div class="space"></div>
@@ -161,9 +193,33 @@ img{
 
 		<p>The best way to get a feel for the game is of course to try the <a target="_" href="https://picto-game.com">Demo</a>.<p>
 
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>You play on the road! (145K views <a target="_" href="https://www.tiktok.com/@gustav_almstrom_games/video/7521320050012228886">Tik Tok</a>)</b></p>
+		<div class="space"></div>
+
+		<div>
+		<video class="page-video" autoplay muted loop controls>
+		  <source src="videos/bus.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div class="space"></div>
+
 		<h2>Custom Made Game Engine</h2>
 
 		<p>The game's engine is written from scratch in C++ and uses a new mixed reality technique not seen in any previous game. The idea behind the tech is to create as much interesting gameplay as possible, rather than making the most immersive AR experience, which might be what gives it the edge over traditional AR games.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p><i>´´Check out this incredible mobile game created with mixed reality technology``</i></p>
+		<p><i>´´It's written from scratch using C++``</i></p>
+		<div class="space"></div>
+		<p><a target="_" href="https://80.lv/articles/watch-a-tiny-game-character-interact-with-real-objects-in-mixed-reality">80 Level</a></p>
 
 		<div class="space"></div>
 		<div class="space"></div>
@@ -177,15 +233,30 @@ img{
 
 		<p>Picto is an example of a game which I think would be harder to make in a pre-built engine, especially if you want to make it run well, since the game consists of a combination of a bunch of different custom-made systems that don't already exist in engines.</p>
 
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>Blue pixels can turn into water (1.1 million views <a target="_" href="https://www.tiktok.com/@gustav_almstrom_games/video/7518419932464418070">Tik Tok</a>)</b></p>
+		<div class="space"></div>
+
+		<div>
+		<video class="page-video" autoplay muted loop controls>
+		  <source src="videos/splish_splash.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div class="space"></div>
+
 		<h2>Kickstarer in November!</h2>
 
-		<p>We're planning on running a kickstarter to be able to complete the game, <a target="_" href="https://kickstarter.picto-game.com">kickstarter.picto-game.com</a>, and we're going to launch it some time in November!</p>
+		<p>We're planning on launching a kickstarter in November to be able to complete the game, <a target="_" href="https://kickstarter.picto-game.com">kickstarter.picto-game.com</a>.</p>
 
 		<div class="space"></div>
 		<div class="space"></div>
 		<div class="space"></div>
 
-		<p>We have lot's more stuff planned for the full game than what is shown in the demo. Lot's of new mechanics (such as the water simulation in the video below), new areas, and many new levels, but also a level editor!</p>
+		<p>We have lot's more stuff planned for the full game than what is shown in the demo. Lot's of new mechanics (such as the water simulation in the video above), new areas, and many new levels, but also a level editor!</p>
 
 		<div class="space"></div>
 		<div class="space"></div>
@@ -199,19 +270,10 @@ img{
 
 		<p>The Picto editor will basically be a real life version of Super Mario Maker.</p>
 
-		<h1 id="gifs-header">Videos</h1>
+		<h1 id="gifs-header">More Videos</h1>
 
-		<div>
-		<video class="page-video" controls>
-		  <source src="videos/splish_splash.mp4" type="video/mp4">
-		</video>
-		</div>
-
-		<div>
-		<video class="page-video" controls>
-		  <source src="videos/color-cropped.mp4" type="video/mp4">
-		</video>
-		</div>
+		<p class="caption"><b>You can use anything to play the game (3 million views <a target="_" href="https://www.tiktok.com/@gustav_almstrom_games/video/7519805623542861078">Tik Tok</a>)</b></p>
+		<div class="space"></div>
 
 		<div>
 		<video class="page-video-portrait" controls>
@@ -219,21 +281,29 @@ img{
 		</video>
 		</div>
 
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>Some levels involve finding the right colors to break open walls!</b></p>
+		<div class="space"></div>
+
+		<div>
+		<video class="page-video" controls>
+		  <source src="videos/color-cropped.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>There is also a beautiful overworld, with a story and secret lore!</b></p>
+		<div class="space"></div>
+
 		<div>
 		<video class="page-video" controls>
 		  <source src="videos/overworld-cut-cropped.mp4" type="video/mp4">
-		</video>
-		</div>
-
-		<div>
-		<video class="page-video" controls>
-		  <source src="videos/office_cropped.mp4" type="video/mp4">
-		</video>
-		</div>
-
-		<div>
-		<video class="page-video" controls>
-		  <source src="videos/mixed_reality.mp4" type="video/mp4">
 		</video>
 		</div>
 
