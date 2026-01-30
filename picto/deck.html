@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Picto Deck</title>
+
+		<link rel="icon" type="image/x-icon" href="assets/icon.png">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+
+	</head>
+	<style>
+*{
+	text-align:  center;
+	font-family: Alice;
+	margin:      0px auto;
+	padding:     0px;
+}
+
+body{
+	background-color: #f3ecd8;
+}
+
+h1{
+	font-size:       60px;
+	margin:          20px 0px;
+	color:           black;
+	text-decoration: none;
+}
+
+h2{
+	font-size: 40px;
+	margin:    20px 0px;
+}
+
+h3{
+	font-size: 40px;
+	width:     fit-content;
+}
+
+h3:hover{
+	opacity: 0.5;
+}
+
+p{
+	font-size:  25px;
+	text-align: left;
+	width:      1000px;
+}
+
+img{
+	width: 44%;
+}
+
+.column{
+  float: left;
+  width: 600px;
+}
+
+.column > p{
+	margin: 0px;
+	width:  100%;
+}
+
+.row{
+	width: 1200px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear:   both;
+}
+
+.caption{
+	text-align: center;
+}
+
+.screenshot{
+	width: 50%;
+}
+
+.social-media-icon{
+	width: 90px;
+	margin: 0px 20px;
+}
+
+.social-media-icon:hover{
+	opacity: 0.5;
+}
+
+.center{
+	text-align: center;
+}
+
+a:hover{
+	opacity: 0.5;
+}
+
+#navigation{
+	background-color: black;
+	//float:            left;
+	//position:         fixed;
+	//border-radius:    10px;
+}
+
+.navigation-item{
+	color:   #f3ecd8;
+	display: inline-block;
+	margin:  10px 15px;
+}
+
+.space{
+	height: 10px;
+}
+
+.page-video{
+	width: 900px;
+}
+
+.page-video-portrait{
+	width: 500px;
+}
+
+.team-member-container{
+	display: inline-block;
+	margin: 20px;
+}
+
+.team-member-image{
+	width: 200px;
+	border-radius: 100%;
+}
+
+.team-member-container > p{
+	text-align: center;
+	font-size:  30px;
+	width:      250px;
+}
+
+	</style>
+	<body>
+		<h1 id="about-header">Picto - A Camera Game</h1>
+
+		<video class="page-video" autoplay muted loop controls>
+		  <source src="videos/mixed_reality.mp4" type="video/mp4">
+		</video>
+
+		<h2>Escape a Virtual World</h2>
+
+		<p>Tim is trapped inside a video game, but one night he starts having dreams about a universe outside of his own.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p><b>Website:</b> <a target="_" href="https://www.picto-game.com">picto-game.com</a></p>
+		<p><b>Socials:</b> <a target="_" href="https://discord.picto-game.com">Discord</a>, <a target="_" href="https://x.com/GustavAlmstrom">Twitter</a>, <a target="_" href="https://www.tiktok.com/@gustav_almstrom_games">TikTok</a>,</p>
+		<p><b>Contact:</b> <a target="_" href="mailto:gustav.almstrom.games@gmail.com">Mail (Gustav)</a></p>
+
+		<h2>Fresh and Innovative Gameplay</h2>
+
+		<p>Picto is a game about using your phone's camera to interact with the real world. The game will ask you questions, in the form of levels, and it's up to you to find the answer somewhere in your surroundings.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>How will you get over that gap? How will you make it past that guard dog? How will you escape through that solid wall? You are allowed to use your full creativity, to find an answer somewhere in the infinite sandbox of life.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>There are many different ways to get around your foes!</b></p>
+		<div class="space"></div>
+		<div>
+		<video class="page-video" autoplay muted loop controls>
+		  <source src="videos/enemy_whiteboard_line.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>The game aims to explore the full consequence of mixing reality with a video game, and does not shy away from all of the amazing things that can happen, but rather embraces them. You can walk around on your shadow or your reflection in the mirror. You can create the solution to a level with objects in your room, find it out in nature, draw it with pen and paper or on a computer screen.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>Blend colors to phase through walls between life and the game.</b></p>
+		<div class="space"></div>
+		<div>
+		<video class="page-video" autoplay muted loop controls>
+		  <source src="videos/color-cropped.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<h2>Custom Made Game Engine</h2>
+
+		<p>The game's engine is written from scratch in C++ and uses a new mixed reality technique not seen in any previous game. The idea behind the tech is to create as much interesting gameplay as possible, rather than making the most immersive AR experience, which might be what gives it the edge over traditional AR games.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>Rendering is done with OpenGL on Android and Metal on iOS. The game interfaces with the phone's native camera and gyroscope APIs directly, and does not rely on any external SDKs or libraries.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>Picto is way more performant than other AR game that use AR-core. It runs at 60 fps on an iPhone 7 (from 2018), which makes it feel way more fun and premium to play. The startup and load time is a few 100 milliseconds, which is way faster than almost every other mobile game, AR or not. This is thanks to lots of dedicated optimization work.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>We believe that software quality matters a lot, and we're turning Picto into a fast and robust application.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>On top of the mixed reality tech, Picto can simultaneously run a real time semi-eulerian fluid simulation with up to 32000 particles at 60 fps (also on the iPhone 7).</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>In some levels, blue pixels turn into water that Tim can swim in.</b></p>
+		<div class="space"></div>
+		<div>
+		<video class="page-video" autoplay muted loop controls>
+		  <source src="videos/splish_splash.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<h2>A Story About What's Actually Going On</h2>
+
+		<p>The game's story is based on observing what's actually going while you're playing the game. The main character is called Tim, and he lives inside of a video game, but he does not know this. When you play the game, Tim gets to run around in a projection of our universe, and the question is, how does he feel about this?</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>What would it be like if you all of a sudden appeared inside of a world infinitely more complex than your own? If you suddenly got picked up by the hand of a 4-dimensional being?</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>On your adventure, you will encounter other people living in the game world. Such as a monk who believes that humans are gods, or a scientist who's trying to discover the laws of physics, which in this case is the game's code.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>Picto's story won't be told directly, but will instead be hidden in the game's art and through short written notes. There will be lots of secrets for players to find and piece together, similar to games like Hollow Knight and Animal Well.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>Some levels take place in a 3D world, simulated on a mad scientists computer.</b></p>
+		<div class="space"></div>
+		<div>
+		<video class="page-video" autoplay muted loop controls>
+		  <source src="videos/3dworld.mp4" type="video/mp4">
+		</video>
+		</div>
+
+		<div class="space"></div>
+
+
+		<h2>A Level Editor - IRL Mario Maker</h2>
+
+		<p>In addition to the main adventure and puzzle game, Picto also features a super mario maker style level editor. However, instead of placing tiles inside the game, you draw/build the level in real life and take a picture/video of it. You can then place out game objects such as players, stars and enemies, that automatically will interract with your drawings.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>A level can be composed of multiple pictures and videos, and "action buttons" can be placed out to switch between them. Action buttons give you the same sort of gameplay logic as a choose-your-own-adventure book, and can be put over anything that you draw. This lets Picto levels have interractable doors, levers, switches, npc dialogue, or anything you can imagine!</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>Demonstration of using action buttons to create a door.</b></p>
+		<div class="space"></div>
+		<video class="page-video" controls>
+		  <source src="videos/editor_demonstration.mp4" type="video/mp4">
+		</video>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>
+		We've added more mechanics since this video was filmed, and we're planning on improving the editor by testing it a lot, and working closely with the game's community to figure out what they want to be able to do.
+		</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>
+		Levels can easily be exported to a custom file format ".pictoLevel" and sent to your friends. You can then just click on the file on your phone, and Picto will open with that level loaded. This makes it so that we don't have to store levels on a centralized server, and lets us avoid all of the problems that arise when you become responsible for storing people's photos and videos.
+		</p>
+
+		<h2>Public Reception</h2>
+
+		<p>We're not really doing any super serious marketing work yet, but we have posted some videos that simply show basic gameplay of Picto on different social media platforms. These have performed fairly well. We also have a discord server with 1300+ members. We're actively looking for partners when it comes to marketing, since we're not experts, and believe that our numbers could get much higher with a proper strategy.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+		
+		<p>On TikTok, we've gotten over 7 million views in total: <a target="_" href="https://www.tiktok.com/@gustav_almstrom_games">tiktok.com/@gustav_almstrom_games</a></p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>One of our <a target="_" href="https://www.tiktok.com/@gustav_almstrom_games">Reddit Posts</a> got over 1 million views and 16k upvotes.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p><a target="_" href="https://www.instagram.com/reels/DLgssgVspDD">Reposts</a> on Instagram by accounts other than us have gotten 140k+ likes, suggesting over a million views.</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><b>Some news outlets and people have written about the game</b></p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<div class="row">
+
+		<div class="column">
+
+		<p class="caption"><i>´´Innovative, game-changing and disruptive``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://www.pocketgamer.com/picto/coming-soon/">Pocket Gamer</a></p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><i>´´Fantastic``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://80.lv/articles/this-mixed-reality-game-with-tiny-character-in-sketch-world-now-has-demo">80 Level</a></p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><i>´´MAN I LOVE THIS, it's so cute and the idea is just brilliant!``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://www.tiktok.com/@gustav_almstrom_games/video/7519805623542861078">Tik Tok</a> (3 million view post)</p>
+
+		</div>
+
+		<div class="column">
+
+		<p class="caption"><i>´´Forget Pokémon GO, a new indie game is coming``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://www.creativebloq.com/3d/video-game-design/this-mind-bending-mixed-reality-indie-game-breaks-into-the-real-world">Creative Bloq</a></p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><i>´´The Future of Mobile Gaming Arrives``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://newhotgame.info/blog/picto-demo-now-available-the-future-of-mobile-gaming-arrives-with-mixed-reality-puzzler/">New Hot Game</a></p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p class="caption"><i>´´Finally! A UNIQUE and innovative game!``</i></p>
+		<div class="space"></div>
+		<p class="caption"><a target="_" href="https://www.reddit.com/r/IndieDev/comments/1nk3r19/a_camera_game_looking_for_playtesters_d/">Reddit</a> (1.1 million view post)</p>
+
+		</div>
+
+		</div>
+
+		<h2>Business Model</h2>
+
+		<p>
+		Our vision is to release Picto as a premium game with no ads or micro-transactions. We believe that this is the way games should work in an ideal world, and thus, this is how we want to monetize it.
+		</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>
+		Due to the public reception we've gotten, and the game's eye catching visuals, we think people will be willing to buy it. We also believe people will be extra happy when playing the game, since it will respect them and won't try to Skinner box them for cash constantly.
+		</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>
+		While developing Picto, one of our inspirations has been the game Monument Valley, since it stands out as an artistic, premium, mobile puzzle game that did really well (over 10 million copies sold). It cost $3.99, and we think this is a reasonable price for Picto as well. Potentially slightly higher due to inflation.
+		</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<h2>Release Plan & Development Progress</h2>
+
+		<p>
+		Picto is over 90% completed, and is going to be in a shippable state this summer. However, we don't want to release it until we have a proper marketing strategy in place. We're also thinking about doing an early access release before the summer to work on features such as the level editor with lots of user feedback.
+		</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<p>
+		Closed testing of the full game will begin with a small group of people from the game's discord server in february 2026.
+		</p>
+
+		<h1 id="team-header">The Team</h1>
+
+		<p class="center">
+		A small team based in the south of Sweden.
+		</p>
+
+		<div class="space"></div>
+		<div class="space"></div>
+		<div class="space"></div>
+
+		<div class="team-member-container">
+			<a target="_blank" href="http://gustavalmstrom.com"><img class="team-member-image" src="assets/gustav_person.png"></a>
+			<p><b>Gustav Almström</b></p>
+			<p>Programming</p>
+		</div>
+		<div class="team-member-container">
+			<a target="_blank" href="https://olofhjalmar.webflow.io/"><img class="team-member-image" src="assets/olof_person.png"></a>
+			<p><b>Olof Nilsson</b></p>
+			<p>Art</p>
+		</div>
+		<div class="team-member-container">
+			<a target="_blank" href="https://se.linkedin.com/in/dennis-qvarfordt-hammarlind-b3a39a1b6"><img class="team-member-image" src="assets/dennis_person.png"></a>
+			<p><b>Dennis Qvarfordt</b></p>
+			<p>Music/Sound</p>
+		</div>
+
+	</body>
+</html>
+
+
