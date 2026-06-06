@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Picto Level Editor Manual</title>
+
+		<link rel="icon" type="image/x-icon" href="assets/icon.png">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+
+	</head>
+	<style>
+
+*{
+	text-align:  center;
+	font-family: Alice;
+	margin:      0px auto;
+	padding:     0px;
+}
+
+body{
+	background-color: #f3ecd8;
+}
+
+.tool-image{
+	width: 200pt;
+	float: left;
+}
+
+.image-16-9{
+	width: 400pt;
+	float: left;
+}
+
+.column{
+  float: left;
+  width: 600px;
+}
+
+.column > p{
+	margin: 0px;
+	width:  100%;
+	text-align:  left;
+	margin-left: 50pt;
+}
+
+.column > h3{
+	margin: 0px;
+	width:  100%;
+	text-align:  left;
+	margin-left: 50pt;
+}
+
+.column-left{
+	width: 200pt;
+	text-align:  center;
+}
+
+.row{
+	width: 1200px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear:   both;
+}
+
+	</style>
+	<body>
+
+		<h1 id="about-header">Picto Level Editor Manual</h1>
+
+		<h2 id="about-header">Scenes</h2>
+
+		<div class="row">
+
+		<div class="column.column-left">
+
+		<img class="tool-image" src="scene_tool.png">
+
+		</div>
+
+		<div class="column">
+
+		<h3>About</h3>
+
+		<p>The scenes tab let's you manage and edit the scenes of the level.</p>
+
+		<h3>Add Scene</h3>
+
+		<p>Adds a new scene and takes you to <a href="#camera-mode-header">camera mode</a>.</p>
+
+		<h3>Retake Scene</h3>
+
+		<p>Retakes the picture/video of the current scene. Takes you to <a href="#camera-mode-header">camera mode</a>.</p>
+
+		<h3>Set Start Scene</h3>
+
+		<p>Sets the current scene to the start scene of the level.</p>
+
+		<h3>Delete Scene</h3>
+
+		<p>Deletes the current scene.</p>
+
+		<h3>Edit Scene Edges</h3>
+
+		<p>Allows you to remove unwanted edges from the current scene. Takes you to <a href="#edit-edges-mode-header">edit edges mode</a>.</p>
+
+		</div>
+
+		</div>
+
+		<h3 id="camera-mode-header">Camera Mode</h3>
+
+		<div class="row">
+
+		<div class="column.column-left">
+
+		<img class="image-16-9" src="camera_mode.png">
+
+		</div>
+
+		<div class="column">
+
+		<h3>Take Picture</h3>
+
+		<p>Takes a picture and saves it to the new/current scene.</p>
+
+		<h3>Record Video</h3>
+
+		<p>Starts <a href="#recording-camera-mode-header">recording</a> a video.</p>
+
+		<h3>Scene Overlay</h3>
+
+		<p>Toggles <a href="#scene-overlay-camera-mode-header">scene overlay.</a></p>
+
+		<h3>Exit</h3>
+
+		<p>Exits camera mode. No changes are made to the level.</p>
+
+		</div>
+
+		</div>
+
+		<h3 id="scene-overlay-camera-mode-header">Scene Overlay - Camera Mode</h3>
+
+		<div class="row">
+
+		<div class="column.column-left">
+
+		<img class="image-16-9" src="camera_mode_scene_overlay.png">
+
+		</div>
+
+		<div class="column">
+
+		<h3>About</h3>
+
+		<p>The scene overlay shows a transparent picture of the scene that was selected before you entered camera mode. If the selected scene contains a video, the first frame of that video is shown.</p>
+
+		<h3>Mirror Horizontally</h3>
+
+		<p>Mirrors the scene overlay horizontally. This is useful for aligning doors on the left and right edges of scenes.</p>
+
+		<h3>Mirror Vertically</h3>
+
+		<p>Mirrors the scene overlay vertically. This is useful for aligning doors on the top and bottom edges of scenes.</p>
+
+		</div>
+
+		</div>
+
+		<h3 id="recording-camera-mode-header">Recording - Camera Mode</h3>
+
+		<div class="row">
+
+		<div class="column.column-left">
+
+		<img class="image-16-9" src="camera_mode_recording.png">
+
+		</div>
+
+		<div class="column">
+
+		<h3>Finish Recording</h3>
+
+		<p>Finishes recording and saves the video to the new/current scene.</p>
+
+		</div>
+
+		</div>
+
+		<h3 id="edit-edges-mode-header">Edit Edges Mode</h3>
+
+		<div class="row">
+
+		<div class="column.column-left">
+
+		<img class="image-16-9" src="edit_edges_mode.png">
+
+		</div>
+
+		<div class="column">
+
+		<h3>About</h3>
+
+		<p>You can erase unwanted edges in the scene. Draw with your finger on the screen to cover up edges with green marker. Players/enemies/balls will not collide with edges that are covered up.</p>
+
+		<h3>Toggle Eraser</h3>
+
+		<p>Toggles the erase tool, which let's you erase green markings in the same way that you draw them.</p>
+
+		<h3>Exit</h3>
+
+		<p>Exits edit edges mode and saves your markings.</p>
+
+		</div>
+
+		</div>
+
+		<h2 id="about-header">Objects</h2>
+
+		<div class="row">
+
+		<div class="column.column-left">
+
+		<img class="tool-image" src="objects_tool.png">
+
+		</div>
+
+		<div class="column">
+
+		<h3>About</h3>
+
+		<p>The objects tab let's you add and remove objects from the scene.</p>
+
+		<h3>Player - Tim</h3>
+
+		<p>Adds a default player character, Tim, to the scene.</p>
+
+		<h3>Player - Kim</h3>
+
+		<p>Adds a Kim player character to the scene. If both Tim and Kim exist in the same scene, they can be controlled separately on the left and right halves of the screen. This let's you build co-op levels.</p>
+
+		<h3>Star</h3>
+
+		<p>Adds a star to the scene. The level is won when a player character touches a star.</p>
+
+		<h3>Heart</h3>
+
+		<p>Adds a heart to the scene. (... heart description)</p>
+
+		<h3>Enemy</h3>
+
+		<p>Adds an enemy to the scene.</p>
+
+		<h3>Ball</h3>
+
+		<p>Adds a ball to the scene.</p>
+
+		<h3>Action Button</h3>
+
+		<p>Adds an action button to the scene. <a href="#action-buttons-header">Read More</a></p>
+
+		<h3>Death Area</h3>
+
+		<p>Adds a death area to the scene. Players and enemies die if they touch edges that are covered by a death area.</p>
+
+		</div>
+
+		</div>
+
+		<h3 id="move-objects-header">Move Objects</h3>
+
+		<h3 id="action-buttons-header">Action Buttons</h3>
+
+		<h2 id="about-header">Costumes</h2>
+
+		<p>Some text.</p>
+
+		<h2 id="about-header">Menu</h2>
+
+		<p>Some text.</p>
+
+		<h2 id="about-header">Tips and Tricks</h2>
+
+		<p>Some text.</p>
+
+	</body>
+</html>
+
+
+
